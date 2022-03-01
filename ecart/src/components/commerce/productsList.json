@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "name": "Earrings",
+    "description": "Crab Pool Security",
+    "price": 403.3,
+    "imageUrl": "https://headstartdemo.blob.core.windows.net/assets/099f84cd-d59a-4042-8778-f0d6a9bffc0c-s"
+  },
+  {
+    "id": "2",
+    "name": "Micky Ducky",
+    "description": "Pants description",
+    "price": 45.5,
+    "imageUrl": "https://headstartdemo.blob.core.windows.net/assets/353c32a6-c710-4e5e-bcf0-e39c3dd18a63-s"
+  },
+  {
+    "id": "3",
+    "name": "Niki Smarts",
+    "description": "Shoes description",
+    "price": 52,
+    "imageUrl": "https://headstartdemo.blob.core.windows.net/assets/ec49d540-9416-4f02-8b18-02801a7b201c-s"
+  },
+  {
+    "id": "4",
+    "name": "Neckerchief",
+    "description": "Shoes description",
+    "price": 60,
+    "imageUrl": "https://headstartdemo.blob.core.windows.net/assets/70322971-06a7-4703-948c-d227e3a0044c-s"
+  },
+
+  {
+    "id": "5",
+    "name": "Crocs",
+    "description": "Shoes description",
+    "price": 53,
+    "imageUrl": "https://headstartdemo.blob.core.windows.net/assets/2ee164e6-6d69-4d68-855e-3cb177a514f6-s"
+  },
+
+  {
+    "id": "6",
+    "name": "Bookish...",
+    "description": "Shoes description",
+    "price": 51,
+    "imageUrl": "https://headstartdemo.blob.core.windows.net/assets/4236b63d-f379-446d-80e6-59fad891c01c-s"
+  }
+]

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="./css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="./css/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+
+    <script>
+      //load TrackerJS
+      !(function (t, n, e, o, a) {
+        function d(t) {
+          var n = ~~(Date.now() / 3e5),
+            o = document.createElement(e);
+          (o.async = !0), (o.src = t + "?ts=" + n);
+          var a = document.getElementsByTagName(e)[0];
+          a.parentNode.insertBefore(o, a);
+        }
+        (t.MooTrackerObject = a),
+          (t[a] =
+            t[a] ||
+            function () {
+              return t[a].q
+                ? void t[a].q.push(arguments)
+                : void (t[a].q = [arguments]);
+            }),
+          window.attachEvent
+            ? window.attachEvent("onload", d.bind(this, o))
+            : window.addEventListener("load", d.bind(this, o), !1);
+      })(
+        window,
+        document,
+        "script",
+        "//cdn.stat-track.com/statics/moosend-tracking.min.js",
+        "mootrack"
+      );
+      //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
+      mootrack("init", "d1632bfb-90ed-4105-9bb8-4aea7ee34d1a");
+    </script>
+
+    <script>
+      // Define the Boxever settings
+      var _boxeverq = _boxeverq || [];
+      var _boxever_settings = {
+        client_key: "cdp31vqw5187pofzo6uj9hr5slxwlukr",
+        target: "https://api-us.boxever.com/v1.2",
+        cookie_domain: ".cdp-tenant.sitecore.com",
+        web_flow_target: "https://d35vb5cccm4xzp.cloudfront.net",
+        pointOfSale: "cdp-tenant.sitecore.com",
+      };
+      // Import the Boxever library asynchronously
+      (function () {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://d1mj578wat5n4o.cloudfront.net/boxever-1.4.8.min.js";
+        var x = document.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+      _boxeverq.push(function () {
+        var viewEvent = {
+          channel: "WEB",
+          type: "VIEW",
+          language: "EN",
+          currency: "USD",
+          page: "/home",
+          pos: "cdp-tenant.sitecore.com",
+          browser_id: Boxever.getID(),
+        };
+        Boxever.eventCreate(viewEvent, function (data) {}, "json");
+      });
+    </script>
+  </body>
+</html>
